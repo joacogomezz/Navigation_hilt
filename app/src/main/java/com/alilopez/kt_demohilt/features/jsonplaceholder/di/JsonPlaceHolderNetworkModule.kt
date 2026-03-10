@@ -1,4 +1,4 @@
-package com.alilopez.kt_demohilt.features.jsonplaceholder.data.di
+package com.alilopez.kt_demohilt.features.jsonplaceholder.di
 
 import com.alilopez.kt_demohilt.core.di.JsonPlaceHolderRetrofit
 import com.alilopez.kt_demohilt.features.jsonplaceholder.data.datasources.remote.api.JsonPlaceHolderApi
