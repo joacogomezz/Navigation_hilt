@@ -1,4 +1,4 @@
-package com.alilopez.kt_demohilt.features.rickandmorty.data.datasources.api
+package com.alilopez.kt_demohilt.features.rickandmorty.data.datasources.remote.api
 
 import com.alilopez.demo.features.rickandmorty.data.datasources.remote.model.CharactersResponse
 import kotlinx.serialization.Serializable

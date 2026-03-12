@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.alilopez.demo.features.jsonplaceholder.presentation.screens.PostsScreen
+import com.alilopez.demo.features.rickandmorty.presentation.screens.CharactersScreen
 import com.alilopez.kt_demohilt.core.ui.theme.AppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -15,7 +16,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppTheme {
-                PostsScreen()
+                //PostsScreen()
+                CharactersScreen()
             }
         }
     }
