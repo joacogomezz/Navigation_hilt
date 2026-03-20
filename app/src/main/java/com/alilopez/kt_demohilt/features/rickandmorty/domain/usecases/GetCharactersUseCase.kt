@@ -2,8 +2,9 @@ package com.alilopez.demo.features.rickandmorty.domain.usecases
 
 import com.alilopez.demo.features.rickandmorty.domain.repositories.CharactersRepository
 import com.alilopez.demo.features.rickandmorty.domain.entities.Characters
+import javax.inject.Inject
 
-class GetCharactersUseCase(
+class GetCharactersUseCase @Inject constructor(
     private val repository: CharactersRepository
 ) {
 

@@ -1,5 +1,6 @@
 package com.alilopez.kt_demohilt.core.di
 
+import com.alilopez.kt_demohilt.features.rickandmorty.data.datasources.remote.api.RickAndMortyApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -29,5 +30,11 @@ object NetworkModule {
             .baseUrl("https://rickandmortyapi.com/api/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+    }
+
+    @Provides
+    @Singleton
+    fun provideRickAndMortyApi(@RickAndMortyRetrofit retrofit: Retrofit): RickAndMortyApi {
+        return retrofit.create(RickAndMortyApi::class.java)
     }
 }
